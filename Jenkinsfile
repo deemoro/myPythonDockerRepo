@@ -4,7 +4,7 @@ pipeline {
     stage('Build') {
       steps {
         echo 'Building image'
-        sh 'dockerImage = docker.build registry'
+        sh 'docker.build registry'
       }
     }
 
